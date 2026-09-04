@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anfrage stellen — Aktenlage</title>
+  <meta name="description" content="Stell deine Anfrage zur Aktenprüfung: kurz schildern, worum es geht. Das Formular sendet nichts an einen Server — es füllt eine E-Mail vor, die du selbst abschickst." />
+  
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Aktenlage — zur Startseite">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="4" y="6" width="19" height="4.8" rx="1.4" fill="#17181a"/>
+          <rect x="4" y="13.6" width="24" height="4.8" rx="1.4" fill="#c8471c"/>
+          <rect x="4" y="21.2" width="15" height="4.8" rx="1.4" fill="#17181a" opacity=".45"/>
+        </svg>
+        Akten<span>lage</span>
+      </a>
+      <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="ablauf.html">Ablauf</a>
+        <a href="angebote.html">Angebote</a>
+        <a href="vertraulichkeit.html">Vertraulichkeit</a>
+        <a href="fragen.html">Fragen</a>
+        <a class="btn" href="anfrage.html">Anfrage stellen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="sec sec--papier sec--kompakt">
+      <div class="container">
+        <p class="reiter" data-reveal>Anfrage</p>
+        <h1 data-reveal>Schreib uns, worum es geht.</h1>
+        <p class="gross" data-reveal>Kein Vertrag, keine Vorleistung, keine Unterlagen. Wir melden uns
+        zurück und sagen dir ehrlich, ob eine Prüfung dir in deiner Lage etwas bringt.</p>
+      </div>
+    </section>
+
+    <section class="sec sec--karte" style="padding-top:0">
+      <div class="container">
+
+        <div class="hinweis" data-reveal>
+          <p><strong>Bitte häng keine Unterlagen an.</strong> Wie deine Akte sicher zu uns kommt,
+          legen wir gemeinsam im Erstgespräch fest — siehe
+          <a href="vertraulichkeit.html">Vertraulichkeit &amp; Datenweg</a>. Und schildere hier bitte
+          nur grob, worum es geht: Details gehören nicht in eine E-Mail.</p>
+        </div>
+
+        <div class="formkarte" data-reveal>
+          <form id="anfrage-formular" novalidate>
+
+            <div class="feld">
+              <label for="anliegen">Worum geht es?</label>
+              <select id="anliegen" name="anliegen" required>
+                <option value="">Bitte auswählen</option>
+                <option>Prüfung meiner Unterlagen aus einem Jugendamtsverfahren</option>
+                <option>Prüfung meiner Unterlagen aus einem familiengerichtlichen Verfahren</option>
+                <option>Prüfung eines einzelnen Dokuments</option>
+                <option>Chronologie meiner Unterlagen</option>
+                <option>Ich weiß noch nicht genau — ich brauche erst ein Gespräch</option>
+              </select>
+              <p class="feld__fehler"></p>
+            </div>
+
+            <div class="feld-zeile">
+              <div class="feld">
+                <label for="umfang">Wie viel Papier liegt ungefähr vor?</label>
+                <select id="umfang" name="umfang" required>
+                  <option value="">Bitte auswählen</option>
+                  <option>Weniger als 50 Seiten</option>
+                  <option>50 bis 150 Seiten</option>
+                  <option>150 bis 400 Seiten</option>
+                  <option>Mehr als 400 Seiten</option>
+                  <option>Ich habe die Unterlagen noch nicht</option>
+                </select>
+                <p class="feld__hilfe">Eine grobe Schätzung reicht völlig.</p>
+                <p class="feld__fehler"></p>
+              </div>
+
+              <div class="feld">
+                <label for="dringlichkeit">Steht ein Termin an?</label>
+                <select id="dringlichkeit" name="dringlichkeit">
+                  <option value="">Keine Angabe</option>
+                  <option>Nein, es eilt nicht</option>
+                  <option>Ja, innerhalb der nächsten vier Wochen</option>
+                  <option>Ja, innerhalb der nächsten zwei Wochen</option>
+                  <option>Ja, in den nächsten Tagen</option>
+                </select>
+                <p class="feld__fehler"></p>
+              </div>
+            </div>
+
+            <div class="feld-zeile">
+              <div class="feld">
+                <label for="name">Wie sollen wir dich ansprechen?</label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+                <p class="feld__hilfe">Vorname genügt.</p>
+                <p class="feld__fehler"></p>
+              </div>
+
+              <div class="feld">
+                <label for="email">E-Mail-Adresse</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <p class="feld__fehler"></p>
+              </div>
+            </div>
+
+            <div class="feld">
+              <label for="telefon">Telefon <span class="klein">(freiwillig)</span></label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" />
+              <p class="feld__hilfe">Nur, wenn dir ein Rückruf lieber ist als eine E-Mail.</p>
+            </div>
+
+            <div class="feld">
+              <label for="nachricht">Worum geht es? <span class="klein">(kurz)</span></label>
+              <textarea id="nachricht" name="nachricht"
+                placeholder="Ein paar Sätze reichen. Bitte keine Namen von Kindern, keine Diagnosen, keine Aktenzeichen."></textarea>
+              <p class="feld__hilfe">Alles Weitere im Erstgespräch — dort ist es besser aufgehoben als in einer E-Mail.</p>
+            </div>
+
+            <div class="feld feld--check">
+              <input type="checkbox" id="sozialtarif" name="sozialtarif" />
+              <label for="sozialtarif">Ich kann mir das voraussichtlich nicht leisten und frage nach dem
+              Sozialtarif. <span class="klein">(Nachweise verlangen wir nicht.)</span></label>
+            </div>
+
+            <div class="feld feld--check">
+              <input type="checkbox" id="einwilligung" name="einwilligung" required />
+              <label for="einwilligung">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a>
+              gelesen und bin damit einverstanden, dass meine Angaben zur Bearbeitung dieser Anfrage
+              verwendet werden.</label>
+            </div>
+            <p class="feld__fehler" style="margin-top:-10px"></p>
+
+            <button class="btn" type="submit">Anfrage vorbereiten</button>
+            <p class="feld__hilfe" style="margin-top:14px">Im nächsten Schritt siehst du genau, was
+            übermittelt wird, und schickst die Nachricht selbst ab.</p>
+          </form>
+
+          <div id="anfrage-ergebnis" class="formular__ergebnis" aria-live="polite"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sec sec--tinte sec--kompakt">
+      <div class="container">
+        <p class="reiter" data-reveal>Lieber direkt</p>
+        <h2 data-reveal>Du kannst uns auch einfach schreiben.</h2>
+        <ul class="haken" data-reveal>
+          <li>E-Mail: <span class="ph">[PLATZHALTER: E-Mail-Adresse]</span></li>
+          <li>Telefon / Rückrufzeiten: <span class="ph">[PLATZHALTER: Telefon oder Zeiten]</span></li>
+          <li>Post: <span class="ph">[PLATZHALTER: Postanschrift]</span></li>
+        </ul>
+        <p class="klein" data-reveal>In akuten Krisen sind wir nicht die richtige Adresse. Bei
+        unmittelbarer Gefahr wende dich an Polizei oder Notruf 112, bei seelischen Notlagen an die
+        Telefonseelsorge unter 0800 111 0 111 oder 0800 111 0 222 — rund um die Uhr und kostenfrei.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__claim">Nicht die Zahl der Vorwürfe zählt. Sondern was <span>belegt</span> ist.</p>
+
+      <p class="abgrenzung">Aktenlage prüft, ob sich die Angaben in deinen Unterlagen aus den Unterlagen
+      selbst nachvollziehen lassen. Wir erbringen keine Rechtsdienstleistung, bewerten nicht rechtlich,
+      vertreten dich nicht und erstellen keine familiengerichtlichen Gutachten.</p>
+
+      <div class="footer__grid">
+        <div>
+          <h4>Angebot</h4>
+          <ul>
+            <li><a href="ablauf.html">So läuft es ab</a></li>
+            <li><a href="angebote.html">Angebote &amp; Pakete</a></li>
+            <li><a href="sozialtarif.html">Sozialtarif &amp; Spendentopf</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Vertrauen</h4>
+          <ul>
+            <li><a href="vertraulichkeit.html">Vertraulichkeit &amp; Datenweg</a></li>
+            <li><a href="fragen.html">Fragen &amp; Antworten</a></li>
+            <li><a href="anfrage.html">Anfrage stellen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><span class="ph">[PLATZHALTER: E-Mail-Adresse]</span></li>
+            <li><span class="ph">[PLATZHALTER: Telefon oder Rückrufzeiten]</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__meta">
+        <span>© <span data-jahr></span> Aktenlage</span>
+        <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="agb.html">AGB</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="datenschutz-hinweis" class="notice" hidden>
+    <p>Diese Website setzt keine Tracking-Cookies und lädt nichts von fremden Servern. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    <button class="btn btn--hell" type="button">Verstanden</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.ANFRAGE_CONFIG = {
+      marke: "Aktenlage",
+      /* [PLATZHALTER: E-Mail-Adresse hier eintragen, z. B. "kontakt@aktenlage.de" ] */
+      email: ""
+    };
+  </script>
+  <script src="js/anfrage.js"></script>
+</body>
+</html>

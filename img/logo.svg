@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 56" role="img" aria-label="Aktenlage">
+  <title>Aktenlage</title>
+  <rect x="2" y="10" width="26" height="7" rx="2" fill="#17181a"/>
+  <rect x="2" y="20.5" width="32" height="7" rx="2" fill="#c8471c"/>
+  <rect x="2" y="31" width="20" height="7" rx="2" fill="#17181a" opacity=".45"/>
+  <text x="48" y="35.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="800" letter-spacing="-.8" fill="#17181a">Akten<tspan fill="#c8471c">lage</tspan></text>
+</svg>
