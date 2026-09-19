@@ -1,5 +1,7 @@
 /* Aktenlage — gemeinsames Verhalten aller Seiten.
    Kein Framework, keine externen Aufrufe, kein Tracking. */
+document.documentElement.classList.add("js");
+
 (function () {
   "use strict";
 
@@ -31,8 +33,17 @@
     var nav = document.querySelector(".nav");
     if (!knopf || !nav) return;
 
+    function schliessen() {
+      nav.classList.remove("offen");
+      document.body.classList.remove("menu-open");
+      knopf.setAttribute("aria-expanded", "false");
+      knopf.textContent = "☰";
+      knopf.setAttribute("aria-label", "Menü öffnen");
+    }
+
     knopf.addEventListener("click", function () {
       var offen = nav.classList.toggle("offen");
+      document.body.classList.toggle("menu-open", offen);
       knopf.setAttribute("aria-expanded", offen ? "true" : "false");
       knopf.textContent = offen ? "✕" : "☰";
       knopf.setAttribute("aria-label", offen ? "Menü schließen" : "Menü öffnen");
@@ -40,10 +51,32 @@
 
     nav.addEventListener("click", function (e) {
       if (e.target.tagName !== "A") return;
-      nav.classList.remove("offen");
-      knopf.setAttribute("aria-expanded", "false");
-      knopf.textContent = "☰";
+      schliessen();
     });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav.classList.contains("offen")) {
+        schliessen();
+        knopf.focus();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 930) schliessen();
+    });
+  }
+
+  /* Kopfzeile beim Scrollen optisch vom Inhalt absetzen */
+  function kopfzeile() {
+    var header = document.querySelector(".header");
+    if (!header) return;
+
+    function aktualisieren() {
+      header.classList.toggle("is-scrolled", window.scrollY > 12);
+    }
+
+    aktualisieren();
+    window.addEventListener("scroll", aktualisieren, { passive: true });
   }
 
   /* Aktuellen Navigationspunkt markieren */
@@ -88,6 +121,7 @@
   function start() {
     einblenden();
     menue();
+    kopfzeile();
     aktiverLink();
     hinweisleiste();
     jahr();

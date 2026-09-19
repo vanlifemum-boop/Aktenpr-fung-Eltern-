@@ -42,15 +42,18 @@ HTML-Dateien nachgezogen werden — es gibt bewusst keinen Build-Schritt.
 
 | | |
 |---|---|
-| Papier | `#faf7f2` |
-| Papier dunkler | `#f2ece2` |
-| Tinte | `#17181a` |
-| Signal | `#c8471c` |
-| Marker | `#ffe08a` |
-| Schrift | Systemschrift, kein Webfont |
+| Papier | `#f6f1e8` |
+| Papier dunkler | `#e9e2d7` |
+| Tinte / Petrol | `#102f2c` |
+| Signal / Terrakotta | `#c65c3a` |
+| Marker / Gold | `#f0c376` |
+| Salbei | `#dce8df` |
+| Schrift | System-Sans für Text, System-Serif für Überschriften; keine Webfonts |
 
 Die Bildmarke sind drei versetzte Balken: Aktenschichten, der mittlere steht als Karteireiter
-hervor. Der Textmarker-Effekt (`.mark`) ist das wiederkehrende Gestaltungselement.
+hervor. Das Gestaltungssystem verbindet eine ruhige, redaktionelle Typografie mit klaren
+Fundstellen, Statusmarken und Aktenmotiven. Die Startseite folgt bewusst der Dramaturgie
+Problem → Ergebnis → Abgrenzung → Ablauf → Anfrage.
 
 ## Lokal ansehen
 
@@ -121,6 +124,6 @@ Mindestens nötig:
 
 ## Bilder
 
-Noch keine. Die Flächen sind bis dahin rein per CSS gebaut (`.aktenblatt`). Geplant sind
-abstrakt-grafische Motive in der Markenpalette — keine Menschen, keine Gesichter, keine lesbaren
-Dokumente.
+Noch keine externen Bilddateien. Das Prüfbericht-Motiv im Hero ist vollständig in HTML und CSS
+gebaut. Es zeigt nur abstrakte Beispieldaten — keine Menschen, keine Gesichter und keine echten
+oder lesbaren Falldokumente.
