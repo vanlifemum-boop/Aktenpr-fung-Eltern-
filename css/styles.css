@@ -431,6 +431,58 @@ a.btn:hover::after { transform: translate(2px, -2px); }
 
 .shader-hero__canvas.is-fallback { opacity: 0; }
 
+.shader-hero__fallback {
+  position: absolute;
+  inset: -8%;
+  z-index: -4;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 74% 24%, rgba(53, 200, 255, .24), transparent 26%),
+    radial-gradient(circle at 22% 76%, rgba(255, 92, 168, .18), transparent 29%),
+    radial-gradient(circle at 50% 48%, rgba(115, 87, 255, .28), transparent 38%);
+  animation: fallback-aurora 12s ease-in-out infinite alternate;
+}
+
+.shader-hero__fallback span {
+  position: absolute;
+  left: -62%;
+  width: 58%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent 0%, rgba(53, 200, 255, .08) 16%, #35c8ff 76%, #dff8ff 92%, transparent 100%);
+  box-shadow: 0 0 8px rgba(53, 200, 255, .84), 0 0 34px rgba(53, 200, 255, .42);
+  animation: fallback-streak 7.6s cubic-bezier(.38, 0, .62, 1) infinite;
+}
+
+.shader-hero__fallback span:nth-child(1) { top: 31%; animation-delay: -1.4s; }
+.shader-hero__fallback span:nth-child(2) {
+  top: 54%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(115, 87, 255, .12) 12%, #8e7dff 78%, #fff 94%, transparent 100%);
+  box-shadow: 0 0 9px rgba(115, 87, 255, .9), 0 0 38px rgba(115, 87, 255, .5);
+  animation-duration: 9.2s;
+  animation-delay: -6.7s;
+}
+.shader-hero__fallback span:nth-child(3) {
+  top: 73%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 92, 168, .08) 14%, #ff5ca8 80%, #ffe2f0 94%, transparent 100%);
+  box-shadow: 0 0 8px rgba(255, 92, 168, .82), 0 0 32px rgba(255, 92, 168, .38);
+  animation-duration: 8.4s;
+  animation-delay: -4.1s;
+}
+
+@keyframes fallback-streak {
+  0% { opacity: 0; transform: translate3d(0, 0, 0) scaleX(.72); }
+  12% { opacity: .88; }
+  78% { opacity: .88; }
+  100% { opacity: 0; transform: translate3d(295%, 0, 0) scaleX(1.08); }
+}
+
+@keyframes fallback-aurora {
+  from { transform: scale(1) translate3d(-1.5%, 1%, 0); }
+  to { transform: scale(1.08) translate3d(2%, -1.5%, 0); }
+}
+
 .shader-hero::before {
   content: "";
   position: absolute;
@@ -1088,6 +1140,8 @@ ul.minus li::before { content: ""; position: absolute; left: 0; top: .78em; widt
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
   .btn:hover { transform: none; }
+  .shader-hero__fallback { animation: none; }
+  .shader-hero__fallback span { animation: none; opacity: .42; transform: translateX(115%); }
 }
 
 /* ---------- Kleine Bildschirme ------------------------------------------ */
