@@ -456,7 +456,7 @@ a.btn:hover::after { transform: translate(2px, -2px); }
 
 .hero {
   overflow: hidden;
-  padding: clamp(72px, 8vw, 112px) 0 clamp(78px, 9vw, 124px);
+  padding: clamp(58px, 6vw, 82px) 0 clamp(68px, 7vw, 96px);
   color: #f5f6f1;
   background:
     radial-gradient(circle at 82% 25%, rgba(108, 156, 139, 0.26), transparent 28%),
@@ -480,17 +480,17 @@ a.btn:hover::after { transform: translate(2px, -2px); }
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.82fr);
-  gap: clamp(56px, 8vw, 112px);
+  grid-template-columns: minmax(0, 1.18fr) minmax(350px, 0.82fr);
+  gap: clamp(42px, 6vw, 82px);
   align-items: center;
 }
 
 .hero .reiter { color: var(--marker); }
 .hero h1 {
-  max-width: 12ch;
+  max-width: 13.2ch;
   margin-bottom: 24px;
   color: #fff;
-  font-size: clamp(3.65rem, 7.4vw, 6.9rem);
+  font-size: clamp(3.55rem, 6.7vw, 6.2rem);
   line-height: 0.94;
   letter-spacing: -0.058em;
 }
