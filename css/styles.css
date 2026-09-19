@@ -1054,6 +1054,28 @@ ul.minus li::before { content: ""; position: absolute; left: 0; top: .78em; widt
 .prosa th, .prosa td { padding: 12px 14px; border-bottom: 1px solid var(--linie); text-align: left; vertical-align: top; }
 .prosa th { color: var(--tinte); background: var(--lavendel); font-weight: 760; }
 
+/* Kompakte Darstellung für das Impressum: vollständig, aber bewusst ruhig. */
+.legal-page .sec--kompakt { padding-block: clamp(34px, 5vw, 54px); }
+.prosa--legal { max-width: 68ch; font-size: .91rem; line-height: 1.6; }
+.prosa--legal .reiter { margin-bottom: 14px; }
+.prosa--legal h1 { margin-bottom: .35em; font-size: clamp(2.1rem, 4vw, 3.35rem); }
+.prosa--legal .gross { margin-bottom: 1.25rem; font-size: clamp(.98rem, 1.6vw, 1.08rem); }
+.prosa--legal h2 {
+  max-width: none;
+  margin: 1.25rem 0 .35rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--linie);
+  font-size: 1.05rem;
+  letter-spacing: -.02em;
+  line-height: 1.25;
+}
+.prosa--legal p { max-width: none; margin-bottom: .72rem; }
+.legal-page .footer { padding: 28px 0; }
+.legal-page .footer__claim,
+.legal-page .abgrenzung,
+.legal-page .footer__grid { display: none; }
+.legal-page .footer__meta { padding-top: 0; }
+
 /* ---------- Schluss-CTA ------------------------------------------------- */
 
 .sec--signal h2 { max-width: 16ch; }
