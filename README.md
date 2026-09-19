@@ -61,10 +61,16 @@ python3 -m http.server 8000
 
 ## Veröffentlichen
 
-GitHub Pages, Quelle: Branch `main`, Ordner `/` (root). `.nojekyll` ist vorhanden.
+**Adresse:** https://vanlifemum-boop.github.io/aktenlage/
 
-Eigene Domain: Datei `CNAME` mit der Domain als einziger Zeile anlegen, DNS beim Registrar auf
-GitHub Pages zeigen lassen.
+GitHub Pages, Quelle: Branch `main`, Ordner `/` (root). `.nojekyll` ist vorhanden. Alle Pfade im
+Projekt sind relativ, die Seite läuft deshalb auch im Unterverzeichnis einer Projekt-Page.
+
+Einschalten unter **Settings → Pages → Source: „Deploy from a branch" → `main` / `(root)`**.
+
+Eigene Domain später: Datei `CNAME` mit der Domain als einziger Zeile anlegen, DNS beim Registrar
+auf GitHub Pages zeigen lassen — und die Adresse in `sitemap.xml` und `robots.txt` ersetzen.
+GitHub leitet die alte github.io-Adresse danach automatisch weiter.
 
 ## Vor dem Livegang ausfüllen
 
@@ -82,7 +88,7 @@ Mindestens nötig:
 - E-Mail-Adresse in `anfrage.html` (`window.ANFRAGE_CONFIG.email`) — ohne sie zeigt das Formular
   nur einen Hinweis statt der fertigen E-Mail
 - Preise in `angebote.html`, Fristen in `ablauf.html` und `vertraulichkeit.html`
-- Domain in `sitemap.xml` und `robots.txt`
+- Bei eigener Domain: Adresse in `sitemap.xml` und `robots.txt` ersetzen
 - Eingesetzten Übermittlungsdienst in `vertraulichkeit.html`
 - Bankverbindung für den Spendentopf in `sozialtarif.html`
 
