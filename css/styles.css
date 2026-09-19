@@ -1266,7 +1266,7 @@ ul.minus li::before {
 
 .notice {
   position: fixed;
-  left: 20px;
+  left: auto;
   right: 20px;
   bottom: 18px;
   z-index: 150;
@@ -1275,8 +1275,8 @@ ul.minus li::before {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  max-width: 920px;
-  margin-inline: auto;
+  width: min(620px, calc(100vw - 40px));
+  margin-inline: 0;
   padding: 15px 17px 15px 20px;
   color: #edf4f0;
   background: rgba(10, 38, 36, 0.97);
@@ -1319,6 +1319,6 @@ ul.minus li::before {
   .btn-zeile { align-items: stretch; flex-direction: column; }
   .btn-zeile .btn { width: 100%; }
   .vorschau p { font-size: 0.76rem; }
-  .notice { left: 10px; right: 10px; bottom: 10px; }
+  .notice { left: 10px; right: 10px; bottom: 10px; width: auto; }
   .notice .btn { width: 100%; }
 }
