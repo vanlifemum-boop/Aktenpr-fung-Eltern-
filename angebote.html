@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#070914" />
   <title>Angebote &amp; Pakete — Aktenlage</title>
-  <meta name="description" content="Drei Pakete für die Aktenprüfung, davor immer Erstgespräch und Sichtung mit Festpreis. Einzelleistungen einzeln buchbar, Sozialtarif möglich." />
+  <meta name="description" content="Aktenprüfung in drei Paketen ab 599 Euro sowie Analyse einzelner Briefe und Schriftstücke mit bis zu fünf Seiten für 150 Euro." />
   
   <!-- VORSCHAU: bis Preise, Abläufe und Annahmebereitschaft geklärt sind. Vor dem Livegang entfernen. -->
   <meta name="robots" content="noindex, nofollow" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css?v=20260919-2" />
+  <link rel="stylesheet" href="css/styles.css?v=20260919-4" />
 </head>
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -63,8 +63,6 @@
           <p>Im Erstgespräch klären wir, worum es geht und ob eine Prüfung dir überhaupt etwas bringt.
           Danach sehen wir den Umfang deiner Unterlagen durch und du bekommst ein schriftliches Angebot
           mit festem Preis und festem Zeitrahmen. Bis dahin bist du zu nichts verpflichtet.</p>
-          <p><strong>Preis Erstgespräch:</strong> <span class="ph">[PLATZHALTER: Preis Erstgespräch]</span> ·
-          <strong>Sichtung:</strong> <span class="ph">[PLATZHALTER: Preis oder „im Erstgespräch enthalten"]</span></p>
         </div>
       </div>
     </section>
@@ -82,7 +80,7 @@
           <div class="paket">
             <p class="paket__stufe">Paket 1</p>
             <h3>Überblick</h3>
-            <p class="paket__preis">Auf Anfrage · <span class="ph">[PLATZHALTER: ab-Preis]</span></p>
+            <p class="paket__preis"><strong>Ab 599&nbsp;€*</strong></p>
             <p>Für den ersten Boden unter den Füßen, wenn du gerade den Überblick verloren hast.</p>
             <ul class="haken">
               <li>Chronologie deiner Unterlagen</li>
@@ -95,12 +93,12 @@
           <div class="paket paket--betont">
             <p class="paket__stufe">Paket 2 · meist gewählt</p>
             <h3>Prüfbericht</h3>
-            <p class="paket__preis">Auf Anfrage · <span class="ph">[PLATZHALTER: ab-Preis]</span></p>
+            <p class="paket__preis"><strong>Ab 999&nbsp;€*</strong></p>
             <p>Das eigentliche Angebot: deine Unterlagen vollständig durchgearbeitet.</p>
             <ul class="haken">
               <li>Alles aus Paket 1</li>
               <li>Vollständiger schriftlicher Prüfbericht mit Fundstellen</li>
-              <li>Besprechung des Berichts <span class="ph">[PLATZHALTER: Dauer]</span></li>
+              <li>Besprechung des Berichts</li>
               <li>Eine Rückfragerunde nach der Besprechung</li>
             </ul>
             <a class="btn" href="anfrage.html">Anfragen</a>
@@ -109,7 +107,7 @@
           <div class="paket">
             <p class="paket__stufe">Paket 3</p>
             <h3>Prüfbericht und Vorlagen</h3>
-            <p class="paket__preis">Auf Anfrage · <span class="ph">[PLATZHALTER: ab-Preis]</span></p>
+            <p class="paket__preis"><strong>Ab 1.599&nbsp;€*</strong></p>
             <p>Wenn du selbst Stellung nehmen musst und nicht weißt, wie du anfangen sollst.</p>
             <ul class="haken">
               <li>Alles aus Paket 2</li>
@@ -121,6 +119,9 @@
           </div>
 
         </div>
+
+        <p class="preis-hinweis" data-reveal>* Je nach Umfang und Aufwand. Nach der Sichtung erhältst
+        du vor Auftragserteilung ein verbindliches Festpreisangebot.</p>
       </div>
     </section>
 
@@ -128,18 +129,21 @@
       <div class="container">
         <p class="reiter" data-reveal>Einzeln buchbar</p>
         <h2 data-reveal>Du brauchst nur ein Stück davon?</h2>
-        <p class="gross" data-reveal>Geht auch. Jede Leistung gibt es einzeln — sinnvoll, wenn schon
-        jemand vorgearbeitet hat oder wenn du nur einen bestimmten Teil deiner Unterlagen prüfen lassen willst.</p>
-        <ul class="haken" data-reveal>
-          <li><strong>Chronologie allein</strong> — die Zeitleiste über deine Unterlagen ·
-          <span class="ph">[PLATZHALTER: Preis]</span></li>
-          <li><strong>Teilprüfung</strong> — nur ein bestimmtes Dokument oder ein bestimmter Zeitraum ·
-          <span class="ph">[PLATZHALTER: Preis]</span></li>
-          <li><strong>Besprechung allein</strong> — du hast den Bericht und willst ihn einordnen ·
-          <span class="ph">[PLATZHALTER: Preis]</span></li>
-          <li><strong>Formulierungsvorlagen allein</strong> — aufbauend auf einer schon erfolgten Prüfung ·
-          <span class="ph">[PLATZHALTER: Preis]</span></li>
-        </ul>
+        <p class="gross" data-reveal>Wenn es nicht um eine ganze Akte geht, kannst du auch ein
+        einzelnes Dokument prüfen lassen.</p>
+
+        <div class="einzelpreis" data-reveal>
+          <div>
+            <p class="paket__stufe">Einzelleistung</p>
+            <h3>Brief- oder Schriftstückanalyse</h3>
+            <p>Strukturierte Analyse eines einzelnen Briefs oder Schriftstücks mit 1 bis 5 Seiten.</p>
+          </div>
+          <div class="einzelpreis__aktion">
+            <p class="einzelpreis__betrag">150&nbsp;€</p>
+            <a class="btn btn--outline" href="anfrage.html">Anfragen</a>
+          </div>
+        </div>
+
         <p class="klein" data-reveal>Alle Preise inklusive Umsatzsteuer, soweit sie anfällt.
         Zahlung nach Rechnung, Ratenzahlung auf Anfrage möglich.</p>
       </div>

@@ -118,7 +118,7 @@ Mindestens nötig:
 - **Impressum** und **Datenschutzerklärung** vor dem Livegang rechtlich prüfen lassen und bei neuen
   Dienstleistern oder Datenflüssen aktualisieren
 - **AGB** anwaltlich prüfen lassen, Widerrufsbelehrung ergänzen
-- Preise in `angebote.html`, Fristen in `ablauf.html` und `vertraulichkeit.html`
+- Fristen in `ablauf.html` und `vertraulichkeit.html`
 - Bei eigener Domain: Adresse in `sitemap.xml` und `robots.txt` ersetzen
 - Eingesetzten Übermittlungsdienst in `vertraulichkeit.html`
 - Bankverbindung für den Spendentopf in `sozialtarif.html`
