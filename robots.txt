@@ -1,4 +1,4 @@
-# VORSCHAU: Die Seite ist noch nicht in Betrieb und soll nicht indexiert werden.
+# INDEXIERUNG GESPERRT: Die Seite soll noch nicht in Suchmaschinen erscheinen.
 # Vor dem Livegang durch den Block darunter ersetzen.
 User-agent: *
 Disallow: /
