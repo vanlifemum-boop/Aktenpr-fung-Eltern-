@@ -93,7 +93,6 @@
       dringlichkeit: auswahlText(e.dringlichkeit),
       name: text(e.name && e.name.value),
       email: text(e.email && e.email.value),
-      telefon: text(e.telefon && e.telefon.value),
       nachricht: text(e.nachricht && e.nachricht.value),
       sozialtarif: !!(e.sozialtarif && e.sozialtarif.checked)
     };
@@ -110,7 +109,6 @@
       "",
       "Name: " + daten.name,
       "E-Mail: " + daten.email,
-      "Telefon: " + (daten.telefon || "nicht angegeben"),
       "",
       "Nachricht:",
       daten.nachricht || "(keine)",
@@ -159,7 +157,6 @@
     if (daten.dringlichkeit) zeile(dl, "Dringlichkeit", daten.dringlichkeit);
     zeile(dl, "Name", daten.name);
     zeile(dl, "E-Mail", daten.email);
-    if (daten.telefon) zeile(dl, "Telefon", daten.telefon);
     if (daten.sozialtarif) zeile(dl, "Sozialtarif", "gewünscht");
     box.appendChild(dl);
 
@@ -171,11 +168,7 @@
       box.appendChild(a);
     } else {
       var hinweis = document.createElement("p");
-      hinweis.innerHTML =
-        "Die Empfängeradresse ist noch nicht eingetragen " +
-        '(<span class="ph">[PLATZHALTER: E-Mail-Adresse]</span>). ' +
-        "Sobald sie in <code>anfrage.html</code> steht, öffnet dieser Schritt " +
-        "die fertige E-Mail.";
+      hinweis.textContent = "Die Empfängeradresse ist derzeit nicht konfiguriert.";
       box.appendChild(hinweis);
     }
 

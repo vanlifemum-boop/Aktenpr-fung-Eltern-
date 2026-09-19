@@ -125,12 +125,6 @@
             </div>
 
             <div class="feld">
-              <label for="telefon">Telefon <span class="klein">(freiwillig)</span></label>
-              <input type="tel" id="telefon" name="telefon" autocomplete="tel" />
-              <p class="feld__hilfe">Nur, wenn dir ein Rückruf lieber ist als eine E-Mail.</p>
-            </div>
-
-            <div class="feld">
               <label for="nachricht">Worum geht es? <span class="klein">(kurz)</span></label>
               <textarea id="nachricht" name="nachricht"
                 placeholder="Ein paar Sätze reichen. Bitte keine Namen von Kindern, keine Diagnosen, keine Aktenzeichen."></textarea>
@@ -167,8 +161,7 @@
         <p class="reiter" data-reveal>Lieber direkt</p>
         <h2 data-reveal>Du kannst uns auch einfach schreiben.</h2>
         <ul class="haken" data-reveal>
-          <li>E-Mail: <span class="ph">[PLATZHALTER: E-Mail-Adresse]</span></li>
-          <li>Telefon / Rückrufzeiten: <span class="ph">[PLATZHALTER: Telefon oder Zeiten]</span></li>
+          <li>E-Mail: <a href="mailto:info@jugendamtsakte-pruefen.pro">info@jugendamtsakte-pruefen.pro</a></li>
           <li>Post: <span class="ph">[PLATZHALTER: Postanschrift]</span></li>
         </ul>
         <p class="klein" data-reveal>In akuten Krisen sind wir nicht die richtige Adresse. Bei
@@ -206,8 +199,7 @@
         <div>
           <h4>Kontakt</h4>
           <ul>
-            <li><span class="ph">[PLATZHALTER: E-Mail-Adresse]</span></li>
-            <li><span class="ph">[PLATZHALTER: Telefon oder Rückrufzeiten]</span></li>
+            <li><a href="mailto:info@jugendamtsakte-pruefen.pro">info@jugendamtsakte-pruefen.pro</a></li>
           </ul>
         </div>
       </div>
@@ -228,8 +220,7 @@
   <script>
     window.ANFRAGE_CONFIG = {
       marke: "Aktenlage",
-      /* [PLATZHALTER: E-Mail-Adresse hier eintragen, z. B. "kontakt@aktenlage.de" ] */
-      email: ""
+      email: "info@jugendamtsakte-pruefen.pro"
     };
   </script>
   <script src="js/anfrage.js"></script>

@@ -117,8 +117,6 @@ Mindestens nötig:
 
 - **Impressum** und **Datenschutzerklärung** vollständig ausfüllen (ohne diese Angaben nicht live gehen)
 - **AGB** anwaltlich prüfen lassen, Widerrufsbelehrung ergänzen
-- E-Mail-Adresse in `anfrage.html` (`window.ANFRAGE_CONFIG.email`) — ohne sie zeigt das Formular
-  nur einen Hinweis statt der fertigen E-Mail
 - Preise in `angebote.html`, Fristen in `ablauf.html` und `vertraulichkeit.html`
 - Bei eigener Domain: Adresse in `sitemap.xml` und `robots.txt` ersetzen
 - Eingesetzten Übermittlungsdienst in `vertraulichkeit.html`
