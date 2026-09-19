@@ -115,7 +115,8 @@ grep -rn "PLATZHALTER" --include="*.html" --include="*.js" --include="*.txt" --i
 
 Mindestens nötig:
 
-- **Impressum** und **Datenschutzerklärung** vollständig ausfüllen (ohne diese Angaben nicht live gehen)
+- **Impressum** und **Datenschutzerklärung** vor dem Livegang rechtlich prüfen lassen und bei neuen
+  Dienstleistern oder Datenflüssen aktualisieren
 - **AGB** anwaltlich prüfen lassen, Widerrufsbelehrung ergänzen
 - Preise in `angebote.html`, Fristen in `ablauf.html` und `vertraulichkeit.html`
 - Bei eigener Domain: Adresse in `sitemap.xml` und `robots.txt` ersetzen
