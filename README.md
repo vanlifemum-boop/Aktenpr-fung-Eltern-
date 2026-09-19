@@ -4,8 +4,8 @@ Website für den Aktenprüfungs-Service für betroffene Eltern.
 
 **Claim:** Entschieden wird nach Aktenlage. Also sollte jemand die Akte gelesen haben.
 
-Statische Website, kein Build-Schritt, keine Abhängigkeiten. Reines HTML, ein Stylesheet,
-zwei kleine JavaScript-Dateien. Es wird nichts von fremden Servern geladen.
+Statische Website, kein Build-Schritt, keine Abhängigkeiten. Reines HTML, ein Stylesheet
+und drei JavaScript-Dateien. Es wird nichts von fremden Servern geladen.
 
 ## Grundregel
 
@@ -29,6 +29,7 @@ agb.html              Geschäftsbedingungen  (noindex)
 404.html              Fehlerseite
 
 css/styles.css        gesamtes Designsystem
+js/shader-hero.js     WebGL-Animation im Startseiten-Hero
 js/main.js            Menü, Einblenden, aktiver Link, Hinweisleiste, Jahreszahl
 js/anfrage.js         Formularprüfung und vorausgefüllte E-Mail
 favicon.svg           Bildmarke
@@ -42,18 +43,19 @@ HTML-Dateien nachgezogen werden — es gibt bewusst keinen Build-Schritt.
 
 | | |
 |---|---|
-| Papier | `#f6f1e8` |
-| Papier dunkler | `#e9e2d7` |
-| Tinte / Petrol | `#102f2c` |
-| Signal / Terrakotta | `#c65c3a` |
-| Marker / Gold | `#f0c376` |
-| Salbei | `#dce8df` |
-| Schrift | System-Sans für Text, System-Serif für Überschriften; keine Webfonts |
+| Nacht | `#070914` |
+| Papier | `#f6f7fc` |
+| Papier dunkler | `#eceff8` |
+| Tinte | `#15182d` |
+| Electric Blue | `#35c8ff` |
+| Violett | `#7357ff` |
+| Pink | `#ff5ca8` |
+| Schrift | System-Sans für Text und Überschriften; keine Webfonts |
 
 Die Bildmarke sind drei versetzte Balken: Aktenschichten, der mittlere steht als Karteireiter
-hervor. Das Gestaltungssystem verbindet eine ruhige, redaktionelle Typografie mit klaren
-Fundstellen, Statusmarken und Aktenmotiven. Die Startseite folgt bewusst der Dramaturgie
-Problem → Ergebnis → Abgrenzung → Ablauf → Anfrage.
+hervor. Das Gestaltungssystem verbindet eine dunkle, technisch präzise Bühne mit elektrischen
+Akzentfarben, klaren Rastern und Statusmarken. Die Startseite folgt bewusst der Dramaturgie
+Versprechen → Problem → Ergebnis → Abgrenzung → Ablauf → Anfrage.
 
 ## Lokal ansehen
 
@@ -124,6 +126,6 @@ Mindestens nötig:
 
 ## Bilder
 
-Noch keine externen Bilddateien. Das Prüfbericht-Motiv im Hero ist vollständig in HTML und CSS
-gebaut. Es zeigt nur abstrakte Beispieldaten — keine Menschen, keine Gesichter und keine echten
-oder lesbaren Falldokumente.
+Noch keine externen Bilddateien. Der animierte Hero wird in `js/shader-hero.js` direkt mit WebGL
+gerendert; bei fehlender WebGL-Unterstützung greift ein CSS-Hintergrund. Die Berichtsvorschau ist
+vollständig in HTML und CSS gebaut. Es gibt keine Menschen, Gesichter oder echten Falldokumente.

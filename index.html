@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aktenlage — Klarheit in deiner Jugendamts- und Gerichtsakte</title>
   <meta name="description" content="Aktenlage prüft Unterlagen aus Jugendamts- und Familiengerichtsverfahren: Was steht wirklich drin, was ist belegt, was fehlt? Du erhältst einen sachlichen Prüfbericht mit Fundstellen." />
-  <meta name="theme-color" content="#102f2c" />
+  <meta name="theme-color" content="#070914" />
 
   <!-- VORSCHAU: bis Impressum und Datenschutz vollständig sind. Vor dem Livegang entfernen. -->
   <meta name="robots" content="noindex, nofollow" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
   <header class="header">
     <div class="container header__inner">
       <a class="logo" href="index.html" aria-label="Aktenlage — zur Startseite">
         <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <rect x="4" y="6" width="19" height="4.8" rx="1.4" fill="#102f2c"/>
-          <rect x="4" y="13.6" width="24" height="4.8" rx="1.4" fill="#c65c3a"/>
-          <rect x="4" y="21.2" width="15" height="4.8" rx="1.4" fill="#102f2c" opacity=".46"/>
+          <rect x="4" y="6" width="19" height="4.8" rx="1.4" fill="#ffffff"/>
+          <rect x="4" y="13.6" width="24" height="4.8" rx="1.4" fill="#35c8ff"/>
+          <rect x="4" y="21.2" width="15" height="4.8" rx="1.4" fill="#ff5ca8" opacity=".85"/>
         </svg>
         Akten<span>lage</span>
       </a>
@@ -46,128 +46,112 @@
       </div>
     </div>
 
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="reiter" data-reveal>Aktenprüfung für betroffene Eltern</p>
-          <h1 data-reveal>Entschieden wird <span>nach Aktenlage.</span></h1>
-          <p class="hero__sub" data-reveal>Wir lesen, was über dich dokumentiert wurde — Seite für
-          Seite, Aussage für Aussage. Du erfährst sachlich und mit konkreten Fundstellen,
-          <strong>was belegt ist, was offen bleibt und wo sich Widersprüche zeigen.</strong></p>
-          <div class="btn-zeile" data-reveal>
-            <a class="btn" href="anfrage.html">Unverbindlich anfragen</a>
-            <a class="btn btn--outline" href="ablauf.html">So läuft die Prüfung ab</a>
-          </div>
-          <ul class="hero__facts" role="list" data-reveal>
-            <li>Festpreis vor Beginn</li>
-            <li>Vertraulicher Datenweg</li>
-            <li>Sozialtarif möglich</li>
-          </ul>
+    <section class="shader-hero" aria-labelledby="hero-title">
+      <canvas class="shader-hero__canvas" data-shader aria-hidden="true"></canvas>
+      <div class="shader-hero__content">
+        <div class="hero-badge" data-reveal>
+          <span class="hero-badge__spark" aria-hidden="true">✦</span>
+          <span>Aktenprüfung für betroffene Eltern</span>
         </div>
-
-        <div class="hero__bild" data-reveal>
-          <div class="casefile-wrap">
-            <div class="casefile" role="img" aria-label="Abstrakte Darstellung eines Prüfberichts mit Fundstellen und den Einordnungen belegt, offen und widersprüchlich">
-              <div class="casefile__meta">
-                <span>Prüfbericht</span>
-                <span>Akte 04 / 2026</span>
-              </div>
-              <p class="casefile__title">Was trägt. Was offen bleibt.</p>
-              <div class="casefile__finding">
-                <span>Fundstelle 12 / 46</span>
-                <strong>belegt</strong>
-              </div>
-              <div class="casefile__finding casefile__finding--offen">
-                <span>Fundstelle 27 / 46</span>
-                <strong>offen</strong>
-              </div>
-              <div class="casefile__finding casefile__finding--widerspruch">
-                <span>Fundstelle 38 / 46</span>
-                <strong>Widerspruch</strong>
-              </div>
-              <p class="casefile__foot">Nachvollziehbar. Punkt für Punkt.</p>
-            </div>
-            <span class="casefile__stamp" aria-hidden="true">Sachlich geprüft</span>
-          </div>
+        <h1 id="hero-title" data-reveal>
+          <span>Entschieden wird</span>
+          <em>nach Aktenlage.</em>
+        </h1>
+        <p class="shader-hero__sub" data-reveal>Wir lesen, was über dich dokumentiert wurde —
+        Seite für Seite, Aussage für Aussage. Du erhältst ein klares Ergebnis mit konkreten
+        Fundstellen: <strong>was belegt ist, was offen bleibt und wo sich Widersprüche zeigen.</strong></p>
+        <div class="btn-zeile" data-reveal>
+          <a class="btn" href="anfrage.html">Unverbindlich anfragen</a>
+          <a class="btn btn--outline" href="ablauf.html">Ablauf ansehen</a>
         </div>
+        <ul class="shader-hero__meta" role="list" data-reveal>
+          <li>Festpreis vor Beginn</li>
+          <li>Vertraulicher Datenweg</li>
+          <li>Sozialtarif möglich</li>
+        </ul>
       </div>
+      <span class="shader-hero__scroll" aria-hidden="true">Mehr erfahren</span>
     </section>
 
-    <aside class="proofbar" aria-label="Grundsätze unserer Arbeit">
-      <div class="container proofbar__grid">
-        <div class="proofbar__item">
-          <strong>Ergebnis mit Fundstellen</strong>
-          <span>Jeder geprüfte Punkt bleibt in der Akte nachschlagbar.</span>
+    <aside class="signal-strip" aria-label="Grundsätze unserer Arbeit">
+      <div class="container signal-strip__grid">
+        <div class="signal-strip__item">
+          <span class="signal-strip__number">01 / FUNDSTELLEN</span>
+          <strong>Jeder Punkt bleibt nachschlagbar.</strong>
+          <span>Keine pauschale Bewertung, sondern konkrete Stellen in deiner Akte.</span>
         </div>
-        <div class="proofbar__item">
-          <strong>Sachlich statt anklagend</strong>
+        <div class="signal-strip__item">
+          <span class="signal-strip__number">02 / SPRACHE</span>
+          <strong>Sachlich statt anklagend.</strong>
           <span>Formuliert für die Weiterarbeit mit deiner Rechtsvertretung.</span>
         </div>
-        <div class="proofbar__item">
-          <strong>Klare Grenzen</strong>
+        <div class="signal-strip__item">
+          <span class="signal-strip__number">03 / GRENZEN</span>
+          <strong>Klar in Leistung und Verantwortung.</strong>
           <span>Keine Rechtsberatung, kein Gutachten, kein Erfolgsversprechen.</span>
         </div>
       </div>
     </aside>
 
     <section class="sec sec--karte">
-      <div class="container intro-grid">
-        <div data-reveal>
-          <p class="reiter">Warum das wichtig ist</p>
-          <h2>Aus einer Notiz kann eine Tatsache werden.</h2>
-          <p class="gross">In Jugendamts- und Gerichtsverfahren wirkt Wiederholung oft wie
-          Bestätigung. Doch eine Aussage wird nicht automatisch wahr, nur weil sie in mehreren
-          Schreiben auftaucht.</p>
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="reiter" data-reveal>Warum Aktenprüfung wichtig ist</p>
+          <h2 data-reveal>Ein Satz wandert. Sein Ursprung verschwindet.</h2>
+          <p class="gross" data-reveal>In Jugendamts- und Gerichtsverfahren kann eine ursprüngliche
+          Einschätzung über mehrere Dokumente hinweg immer sicherer klingen. Wiederholung ist aber
+          noch kein Beleg.</p>
         </div>
 
-        <ol class="story-flow" data-reveal>
-          <li>
-            <h3>Jemand notiert eine Einschätzung.</h3>
-            <p>Vielleicht verkürzt, ohne Quelle oder ohne den Zusammenhang, in dem sie gefallen ist.</p>
-          </li>
-          <li>
-            <h3>Der Satz wird übernommen.</h3>
-            <p>Er taucht in Berichten, Stellungnahmen oder Beschlüssen erneut auf — oft ohne seine Herkunft.</p>
-          </li>
-          <li>
-            <h3>Aus Wiederholung entsteht Gewicht.</h3>
+        <div class="story-grid">
+          <article class="story-card" data-reveal>
+            <h3>Eine Einschätzung wird notiert.</h3>
+            <p>Vielleicht verkürzt, ohne Quelle oder ohne den Zusammenhang, in dem sie entstanden ist.</p>
+          </article>
+          <article class="story-card" data-reveal>
+            <h3>Andere übernehmen den Satz.</h3>
+            <p>Er erscheint in Berichten, Stellungnahmen oder Beschlüssen erneut — oft ohne Herkunft.</p>
+          </article>
+          <article class="story-card" data-reveal>
+            <h3>Wiederholung erzeugt Gewicht.</h3>
             <p>Später liest sich die ursprüngliche Einschätzung wie eine gesicherte Feststellung.</p>
-          </li>
-        </ol>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="sec sec--papier">
+    <section class="sec sec--papier2">
       <div class="container">
-        <p class="reiter" data-reveal>Was du bekommst</p>
-        <h2 data-reveal>Klarheit, die sich nachschlagen lässt.</h2>
-        <p class="gross" data-reveal>Nicht „da stimmt vieles nicht“, sondern eine geordnete,
-        schriftliche Grundlage, mit der du und deine Rechtsvertretung weiterarbeiten könnt.</p>
+        <div class="section-head">
+          <p class="reiter" data-reveal>Was du am Ende hast</p>
+          <h2 data-reveal>Klarheit, die sich belegen lässt.</h2>
+          <p class="gross" data-reveal>Nicht „da stimmt vieles nicht“, sondern eine geordnete,
+          schriftliche Grundlage, mit der du und deine Rechtsvertretung weiterarbeiten könnt.</p>
+        </div>
 
-        <div class="result-grid">
-          <article class="result-card result-card--featured" data-nr="01" data-reveal>
-            <p class="result-card__tag">Das Kernstück</p>
+        <div class="bento-grid">
+          <article class="bento-card bento-card--wide" data-reveal>
+            <p class="bento-card__label">Das Kernstück</p>
             <h3>Schriftlicher Prüfbericht</h3>
-            <p>Jede geprüfte Angabe wird einzeln eingeordnet und mit der Fundstelle in deiner Akte
-            verbunden: belegt, offen oder widersprüchlich zu dem, was du nachweisen kannst.</p>
+            <p>Jede geprüfte Angabe wird eingeordnet und direkt mit der Fundstelle in deiner Akte verbunden.</p>
+            <div class="report-preview" aria-hidden="true">
+              <div class="report-preview__top"><span>Prüfbericht</span><span>Akte 04 / 2026</span></div>
+              <div class="report-preview__row"><span>Fundstelle 12 / 46</span><span class="report-preview__status">belegt</span></div>
+              <div class="report-preview__row"><span>Fundstelle 27 / 46</span><span class="report-preview__status">offen</span></div>
+              <div class="report-preview__row"><span>Fundstelle 38 / 46</span><span class="report-preview__status">Widerspruch</span></div>
+            </div>
           </article>
-          <article class="result-card" data-nr="02" data-reveal>
-            <p class="result-card__tag">Der Überblick</p>
-            <h3>Chronologie der Unterlagen</h3>
-            <p>Eine belastbare Zeitleiste zeigt, welches Dokument wann entstanden ist, worauf es
-            sich bezieht und wie sich Aussagen durch das Verfahren bewegen.</p>
+
+          <article class="bento-card bento-card--accent" data-reveal>
+            <p class="bento-card__label">Der Überblick</p>
+            <h3>Chronologie deiner Unterlagen</h3>
+            <p>Du siehst, welches Dokument wann entstanden ist, worauf es sich bezieht und wie Aussagen weitergetragen wurden.</p>
           </article>
-          <article class="result-card" data-nr="03" data-reveal>
-            <p class="result-card__tag">Die Einordnung</p>
+
+          <article class="bento-card" data-reveal>
+            <p class="bento-card__label">Die Einordnung</p>
             <h3>Persönliche Besprechung</h3>
-            <p>Wir gehen das Ergebnis gemeinsam durch: was wichtig ist, was du mit deiner Anwältin
-            oder deinem Anwalt klären solltest — und was keine weitere Energie verdient.</p>
-          </article>
-          <article class="result-card" data-nr="04" data-reveal>
-            <p class="result-card__tag">Die Sprache</p>
-            <h3>Sachliche Formulierungshilfen</h3>
-            <p>Auf Wunsch erhältst du Textbausteine für deine eigene Stellungnahme: konkret,
-            nachvollziehbar und ohne Angriffe, die dir im Verfahren schaden könnten.</p>
+            <p>Wir gehen die wichtigen Punkte gemeinsam durch und klären, was zu deiner Anwältin oder deinem Anwalt gehört.</p>
           </article>
         </div>
 
@@ -179,57 +163,59 @@
 
     <section class="sec sec--tinte">
       <div class="container">
-        <p class="reiter" data-reveal>Klare Abgrenzung</p>
-        <h2 data-reveal>Wir ordnen Unterlagen. Wir versprechen keinen Ausgang.</h2>
-        <p class="gross" data-reveal>Eine geprüfte Akte ist eine bessere Grundlage für die nächsten
-        Schritte — aber kein Ersatz für anwaltliche Beratung und keine Garantie für eine Entscheidung.</p>
+        <div class="section-head">
+          <p class="reiter" data-reveal>Klare Abgrenzung</p>
+          <h2 data-reveal>Wir machen Unterlagen nachvollziehbar. Nicht Menschen.</h2>
+          <p class="gross" data-reveal>Eine geprüfte Akte ist eine bessere Grundlage — aber kein Ersatz
+          für anwaltliche Beratung und keine Garantie für eine bestimmte Entscheidung.</p>
+        </div>
 
         <div class="scope-grid" data-reveal>
           <div class="scope-panel">
             <p class="scope-panel__label">Was wir tun</p>
-            <h3>Dokumente nachvollziehbar machen.</h3>
-            <p>Wir prüfen, ob Angaben aus den Unterlagen selbst hervorgehen, zeigen Fundstellen,
-            ordnen zeitliche Abläufe und benennen offene oder widersprüchliche Punkte.</p>
+            <h3>Fundstellen, Abläufe und offene Punkte sichtbar machen.</h3>
+            <p>Wir prüfen, was sich aus den Unterlagen selbst nachvollziehen lässt, und stellen das Ergebnis sachlich zusammen.</p>
           </div>
           <div class="scope-panel scope-panel--muted">
             <p class="scope-panel__label">Was wir nicht tun</p>
-            <h3>Rechtlich bewerten oder Menschen beurteilen.</h3>
-            <p>Wir erbringen keine Rechtsberatung, erstellen kein familienpsychologisches Gutachten,
-            urteilen nicht über Beteiligte und liefern keine „Munition auf Bestellung“.</p>
+            <h3>Rechtlich beraten oder Beteiligte beurteilen.</h3>
+            <p>Wir erstellen kein Gutachten, urteilen nicht über Menschen und liefern keine „Munition auf Bestellung“.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="sec sec--papier2">
-      <div class="container intro-grid">
-        <div data-reveal>
-          <p class="reiter">Der Weg zum Ergebnis</p>
-          <h2>Du weißt vorab, was passiert.</h2>
-          <p class="gross">Noch bevor du Unterlagen übermittelst, klären wir Nutzen, Umfang,
+    <section class="sec sec--papier">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="reiter" data-reveal>Vom ersten Kontakt zum Bericht</p>
+          <h2 data-reveal>Vier klare Schritte. Keine Überraschungen.</h2>
+          <p class="gross" data-reveal>Bevor du Unterlagen übermittelst, klären wir Nutzen, Umfang,
           sicheren Datenweg, Preis und Zeitrahmen.</p>
-          <div class="btn-zeile">
-            <a class="btn btn--outline" href="ablauf.html">Ablauf im Detail</a>
-          </div>
         </div>
-        <ol class="schritte" data-reveal>
-          <li>
+
+        <div class="process-grid">
+          <article class="process-step" data-reveal>
             <h3>Unverbindlich anfragen</h3>
-            <p>Du beschreibst kurz die Lage und den ungefähren Umfang — zunächst ohne Unterlagen.</p>
-          </li>
-          <li>
-            <h3>Nutzen und Umfang klären</h3>
-            <p>Im Erstgespräch besprechen wir, ob eine Prüfung sinnvoll ist und wie deine Akte sicher zu uns kommt.</p>
-          </li>
-          <li>
+            <p>Du beschreibst kurz die Lage und den ungefähren Umfang — noch ohne Unterlagen.</p>
+          </article>
+          <article class="process-step" data-reveal>
+            <h3>Nutzen klären</h3>
+            <p>Im Erstgespräch sagen wir ehrlich, ob eine Prüfung in deinem Fall sinnvoll ist.</p>
+          </article>
+          <article class="process-step" data-reveal>
             <h3>Festpreis erhalten</h3>
-            <p>Nach der Sichtung kennst du Preis, Leistungsumfang und Zeitrahmen, bevor die Prüfung beginnt.</p>
-          </li>
-          <li>
-            <h3>Bericht besprechen</h3>
-            <p>Du erhältst das schriftliche Ergebnis und wir gehen die wichtigen Punkte gemeinsam durch.</p>
-          </li>
-        </ol>
+            <p>Nach der Sichtung kennst du Preis, Leistungsumfang und verbindlichen Zeitrahmen.</p>
+          </article>
+          <article class="process-step" data-reveal>
+            <h3>Ergebnis besprechen</h3>
+            <p>Du erhältst den Bericht und wir gehen die wichtigen Punkte gemeinsam durch.</p>
+          </article>
+        </div>
+
+        <div class="btn-zeile" style="justify-content:center" data-reveal>
+          <a class="btn btn--outline" href="ablauf.html">Ablauf im Detail</a>
+        </div>
       </div>
     </section>
 
@@ -249,7 +235,7 @@
         <p class="reiter" data-reveal>Der erste Schritt bleibt klein</p>
         <h2 data-reveal>Schick uns zunächst nur deine Frage.</h2>
         <p class="gross" data-reveal>Kein Vertrag, keine Unterlagen, keine Vorleistung. Wir sehen uns
-        an, worum es geht, und sagen dir ehrlich, ob eine Prüfung in deinem Fall etwas bringt.</p>
+        an, worum es geht, und sagen dir ehrlich, ob eine Prüfung etwas bringt.</p>
         <div class="btn-zeile" data-reveal>
           <a class="btn btn--hell" href="anfrage.html">Unverbindlich anfragen</a>
           <a class="btn btn--outline" href="fragen.html">Häufige Fragen lesen</a>
@@ -304,6 +290,7 @@
     <button class="btn btn--hell" type="button">Verstanden</button>
   </div>
 
+  <script src="js/shader-hero.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
