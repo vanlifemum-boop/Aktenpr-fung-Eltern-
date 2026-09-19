@@ -61,16 +61,18 @@ python3 -m http.server 8000
 
 ## Veröffentlichen
 
-**Adresse:** https://vanlifemum-boop.github.io/aktenlage/
+**Adresse:** https://jugendamtsakte-pruefen.pro/
 
 GitHub Pages, Quelle: Branch `main`, Ordner `/` (root). `.nojekyll` ist vorhanden. Alle Pfade im
-Projekt sind relativ, die Seite läuft deshalb auch im Unterverzeichnis einer Projekt-Page.
+Projekt sind relativ, die Seite läuft damit unter jeder Adresse.
 
 Einschalten unter **Settings → Pages → Source: „Deploy from a branch" → `main` / `(root)`**.
 
-Eigene Domain später: Datei `CNAME` mit der Domain als einziger Zeile anlegen, DNS beim Registrar
-auf GitHub Pages zeigen lassen — und die Adresse in `sitemap.xml` und `robots.txt` ersetzen.
-GitHub leitet die alte github.io-Adresse danach automatisch weiter.
+Die Datei `CNAME` bindet die eigene Domain. Damit sie greift, müssen beim Registrar die
+DNS-Einträge auf GitHub Pages zeigen — die konkreten Werte zeigt GitHub unter
+**Settings → Pages** an. Solange das nicht steht, ist die Seite unter keiner Adresse erreichbar:
+`CNAME` schaltet die github.io-Adresse auf Weiterleitung. Wer die Seite übergangsweise unter
+github.io braucht, löscht `CNAME` wieder.
 
 ## Vor dem Livegang ausfüllen
 

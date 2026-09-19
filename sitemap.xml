@@ -2,31 +2,31 @@
 <!-- Vorlaeufige Adresse (GitHub Pages). Bei eigener Domain hier und in robots.txt ersetzen. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/ablauf.html</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/ablauf.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/angebote.html</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/angebote.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/sozialtarif.html</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/sozialtarif.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/vertraulichkeit.html</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/vertraulichkeit.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/fragen.html</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/fragen.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vanlifemum-boop.github.io/aktenlage/anfrage.html</loc>
+    <loc>https://jugendamtsakte-pruefen.pro/anfrage.html</loc>
     <priority>0.9</priority>
   </url>
 </urlset>

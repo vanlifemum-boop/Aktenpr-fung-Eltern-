@@ -4,4 +4,4 @@ Disallow: /impressum.html
 Disallow: /datenschutz.html
 Disallow: /agb.html
 
-Sitemap: https://vanlifemum-boop.github.io/aktenlage/sitemap.xml
+Sitemap: https://jugendamtsakte-pruefen.pro/sitemap.xml
