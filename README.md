@@ -74,6 +74,28 @@ DNS-Einträge auf GitHub Pages zeigen — die konkreten Werte zeigt GitHub unter
 `CNAME` schaltet die github.io-Adresse auf Weiterleitung. Wer die Seite übergangsweise unter
 github.io braucht, löscht `CNAME` wieder.
 
+## Vorschau-Modus (aktuell aktiv)
+
+Die Seite ist absichtlich **für Suchmaschinen gesperrt** und zeigt auf jeder Seite oben einen
+Hinweis, dass sie noch nicht in Betrieb ist — weil Impressum und Datenschutzerklärung noch
+unvollständig sind.
+
+Alles, was dazugehört, ist im Quelltext mit dem Wort `VORSCHAU` markiert:
+
+```bash
+grep -rn "VORSCHAU" --include="*.html" --include="*.css" --include="*.txt" .
+```
+
+**Zum Abschalten, wenn die Pflichtangaben stehen:**
+
+1. In den sieben Inhaltsseiten je den `VORSCHAU`-Kommentar mit der Zeile
+   `<meta name="robots" content="noindex, nofollow" />` löschen —
+   **nicht** in `impressum.html`, `datenschutz.html`, `agb.html` und `404.html`,
+   die sollen dauerhaft auf `noindex` bleiben
+2. In denselben Seiten den Block `<div class="vorschau">…</div>` löschen
+3. In `css/styles.css` den Abschnitt „Vorschau-Banner" löschen
+4. In `robots.txt` den oberen Block durch den auskommentierten unteren ersetzen
+
 ## Vor dem Livegang ausfüllen
 
 Alle offenen Stellen sind im Quelltext als `[PLATZHALTER: …]` markiert und auf der Seite sichtbar

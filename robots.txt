@@ -1,7 +1,13 @@
+# VORSCHAU: Die Seite ist noch nicht in Betrieb und soll nicht indexiert werden.
+# Vor dem Livegang durch den Block darunter ersetzen.
 User-agent: *
-Allow: /
-Disallow: /impressum.html
-Disallow: /datenschutz.html
-Disallow: /agb.html
+Disallow: /
 
-Sitemap: https://jugendamtsakte-pruefen.pro/sitemap.xml
+# --- Nach dem Livegang gilt dieser Block ---
+# User-agent: *
+# Allow: /
+# Disallow: /impressum.html
+# Disallow: /datenschutz.html
+# Disallow: /agb.html
+#
+# Sitemap: https://jugendamtsakte-pruefen.pro/sitemap.xml
