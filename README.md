@@ -63,10 +63,13 @@ python3 -m http.server 8000
 
 **Adresse:** https://jugendamtsakte-pruefen.pro/
 
-GitHub Pages, Quelle: Branch `main`, Ordner `/` (root). `.nojekyll` ist vorhanden. Alle Pfade im
-Projekt sind relativ, die Seite läuft damit unter jeder Adresse.
+GitHub Pages ist eingerichtet: Quelle „Deploy from a branch", Branch `main`, Ordner `/` (root),
+eigene Domain über `CNAME`, HTTPS erzwungen. `.nojekyll` verhindert die Jekyll-Verarbeitung.
+Alle Pfade im Projekt sind relativ, die Seite läuft damit unter jeder Adresse.
 
-Einschalten unter **Settings → Pages → Source: „Deploy from a branch" → `main` / `(root)`**.
+**Jeder Push auf `main` veröffentlicht.** Einen Build von Hand gibt es nicht — wer die Quelle in den
+Einstellungen umstellt, muss danach einmal pushen, sonst bleibt die alte Auslieferung stehen
+beziehungsweise es wird gar nichts ausgeliefert.
 
 Die Datei `CNAME` bindet die eigene Domain. Damit sie greift, müssen beim Registrar die
 DNS-Einträge auf GitHub Pages zeigen — die konkreten Werte zeigt GitHub unter
